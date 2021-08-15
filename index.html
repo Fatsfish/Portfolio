@@ -27,6 +27,23 @@ https://templatemo.com/tm-518-sentra
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <script type="text/javascript">
+
+        	$(document).ready(function () {
+        	yourFunction();
+    		});
+   			 function yourFunction(){
+			let button = document.querySelector('button[title="Play"]');
+        	button.click();}
+
+    	function autoplay(){
+        let button = document.querySelector('button[title="Play"]');
+        button.click();
+    	}
+    	window.onload = autoplay;
+    	</script>
+
     </head>
 
 <body>
@@ -110,7 +127,6 @@ https://templatemo.com/tm-518-sentra
                 <li><a href="https://github.com/Fatsfish"><i class="fa fa-github"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/JamesNguyen-Fatsfish-Skillcetera/"><i class="fa fa-linkedin"></i></a></li>
                 <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                <li><a href="#"><i class="fa fa-ted"></i></a></li>
             </ul>
         </div>
 
@@ -173,6 +189,11 @@ https://templatemo.com/tm-518-sentra
 
 
         <div class="page-content">
+        	<div align="center">
+                    <h1>A Chill Song <br><em>to go thourgh my portfolio if you don't mind</em></h1>
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/825648961&color=%23c4949c&auto_play=true&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/dy-ako" title="✯Dyako✩°｡" target="_blank" style="color: #cccccc; text-decoration: none;">✯Dyako✩°｡</a> · <a href="https://soundcloud.com/dy-ako/sugar-lamb-on-bed" title="Sugar Lamb on Bed" target="_blank" style="color: #cccccc; text-decoration: none;">Sugar Lamb on Bed</a></div>
+            </div>
+
             <section id="featured" class="content-section">
                 <div class="section-heading">
                     <h1>Featured<br><em>Projects</em></h1>
@@ -301,6 +322,7 @@ https://templatemo.com/tm-518-sentra
                     </div>
                 </div>
             </section>
+
             <section id="projects" class="content-section">
                 <div class="section-heading">
                     <h1>Recent<br><em>Projects</em></h1>
@@ -621,10 +643,9 @@ https://templatemo.com/tm-518-sentra
                     </div>
                 </div>
             </section>
+
             <section class="footer">
-                <p>Copyright &copy; 2021 Fatsfish 
-                
-                . Design: TemplateMo</p>
+                <p>Copyright &copy; 2021 Fatsfish. Design: TemplateMo</p>
             </section>
         </div>
 
