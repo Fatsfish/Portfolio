@@ -96,7 +96,7 @@ https://templatemo.com/tm-518-sentra
                         <a href="#blog">
                             <span class="rect"></span>
                             <span class="circle"></span>
-                            Blog Entires
+                            Blog Entries
                         </a>
                     </li>
                     <li>
@@ -549,9 +549,9 @@ https://templatemo.com/tm-518-sentra
                 </div>
                 <div id="contact-content">
                     <div class="section-heading">
-                        <h1>Contact<br><em>Sentra</em></h1>
-                        <p>Curabitur hendrerit mauris mollis ipsum vulputate rutrum. 
-                        <br>Phasellus luctus odio eget dui imperdiet.</p>
+                        <h1>Contact<br><em>FatsFish</em></h1>
+                        <p>If you found any errors or bugs or if you wanna collaborate with me, 
+                        <br>Or even receiving newsletter from me, contact me through email.</p>
                         
                     </div>
                     <div class="section-content">
@@ -579,7 +579,9 @@ https://templatemo.com/tm-518-sentra
                                 </div>
                                 <div class="col-md-12">
                                   <fieldset>
-                                    <button type="submit" id="form-submit" class="btn">Send Message Now</button>
+                              		<script src="https://smtpjs.com/v3/smtp.js">
+                                    	<button type="submit" id="form-submit" class="btn" onclick="sendEmail()">Send Message Now</button>
+                                	</script>
                                   </fieldset>
                                 </div>
                             </div>
@@ -589,7 +591,7 @@ https://templatemo.com/tm-518-sentra
             </section>
 
             <section class="footer">
-                <p>Copyright &copy; 2021 Fatsfish. Design: TemplateMo</p>
+                <p>Copyright &copy; 2021 Fatsfish.</p>
             </section>
         </div>
 
@@ -600,6 +602,19 @@ https://templatemo.com/tm-518-sentra
     
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js">
+		function sendEmail() {
+			Email.send(
+			{    
+			SecureToken : "68dc97d3-4aa0-468b-b5f1-70dcb3b29fff",
+		    To : 'tuankhai512@gmail.com',
+		    From : "sender@example.com",
+		    Subject : "Test email",
+		    Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+			}
+			).then(message => alert(message));
+		}
+	</script>
 
     <script>
         // Hide Header on on scroll down
