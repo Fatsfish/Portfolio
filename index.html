@@ -551,41 +551,11 @@ https://templatemo.com/tm-518-sentra
                     <div class="section-heading">
                         <h1>Contact<br><em>FatsFish</em></h1>
                         <p>If you found any errors or bugs or if you wanna collaborate with me, 
-                        <br>Or even receiving newsletter from me, contact me through email.</p>
+                        <br>Or even receiving newsletter from me, contact me through <a href="mailto:tuankhai512@gmail.com?subject=Contact for works&body=Dear James,<br>
+                        I would like to reach you for ... <br>
+                        Best regard,
+                        ">email</a>.</p>
                         
-                    </div>
-                    <div class="section-content">
-                        <form id="contact" action="#" method="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <fieldset>
-                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
-                                  </fieldset>
-                                </div>
-                                <div class="col-md-4">
-                                  <fieldset>
-                                    <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
-                                  </fieldset>
-                                </div>
-                                 <div class="col-md-4">
-                                  <fieldset>
-                                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required="">
-                                  </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                  <fieldset>
-                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
-                                  </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                  <fieldset>
-                              		<script src="https://smtpjs.com/v3/smtp.js">
-                                    	<button type="submit" id="form-submit" class="btn" onclick="sendEmail()">Send Message Now</button>
-                                	</script>
-                                  </fieldset>
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </section>
@@ -602,19 +572,6 @@ https://templatemo.com/tm-518-sentra
     
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-	<script src="https://smtpjs.com/v3/smtp.js">
-		function sendEmail() {
-			Email.send(
-			{    
-			SecureToken : "68dc97d3-4aa0-468b-b5f1-70dcb3b29fff",
-		    To : 'tuankhai512@gmail.com',
-		    From : "sender@example.com",
-		    Subject : "Test email",
-		    Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
-			}
-			).then(message => alert(message));
-		}
-	</script>
 
     <script>
         // Hide Header on on scroll down
